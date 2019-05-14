@@ -1,0 +1,1 @@
+Recipe.create!(:name => "salad", :ingredients => "cabbage, oil, vinegar", :cook_time => "0")
