@@ -1,0 +1,1 @@
+Recipe.create(name: 'Cake', ingredients: 'Chocolate', cook_time: 1)
