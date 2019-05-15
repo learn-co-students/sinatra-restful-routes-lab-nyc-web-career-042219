@@ -1,0 +1,10 @@
+<h1>Recipe Index</h1>
+<ul>
+  <% @recipes.each do |recipe| %>
+    <li><%=recipe.name%></li>
+    <li><%=recipe.ingredients%></li>
+    <li><%=recipe.cook_time%></li>
+
+    <a href="/recipes/<%=recipe.id%>">Recipe Show Page</a>    
+  <%end%>
+</ul>
