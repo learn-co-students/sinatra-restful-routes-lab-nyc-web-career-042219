@@ -20,7 +20,7 @@ class RecipesController < ApplicationController
 
   #saves new recipe
     post '/recipes' do
-      @recipe = Recipe.create(:name => params[:name], :ingredients => params[:ingredients], :cook_time => params[:cook_time])
+      @recipe = Recipe.create(params)
       redirect to "/recipes/#{@recipe.id}"
     end
 
@@ -32,7 +32,6 @@ class RecipesController < ApplicationController
     @recipe.ingredients = params[:ingredients]
     @recipe.cook_time = params[:cook_time]
     @recipe.save
-    @recipe.update(name: params[:name], ingredients: params[:ingredients], cook_time: params[:cook_time])
     redirect to "/recipes/#{@recipe.id}"
   end
 
