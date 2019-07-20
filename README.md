@@ -17,15 +17,18 @@ did!), we're going to be building a web app to store those recipes for you!
 2.  Make sure you have a corresponding model for your recipes.
 
 3.  In the `application_controller.rb`, set up a controller action that will
-    render a form to create a new recipe. This controller action should create and
-    save this new recipe to the database.
+    render a form to create a new recipe.
+    This controller action should create
+    and save this new recipe to the database.
 
 4.  Again in the `application_controller.rb`, create a controller action that
     uses RESTful routes to display a single recipe.
 
 5.  Create a third controller action that uses RESTful routes and renders a form
-    to edit a single recipe. This controller action should update the entry in the
-    database with the changes, and then redirect to the recipe show page
+    to edit a single recipe.
+    This controller action should update the entry in the
+    database with the changes,
+    and then redirect to the recipe show page
 
 6.  Create a controller action (index action) that displays all the recipes in
     the database.
